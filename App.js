@@ -31,7 +31,7 @@ export default function App() {
   }, []);
 
   var payUPaymentParams = {
-    key: 'Fvcr3Z',
+    key: 'MERCHANT-KEY',
     transactionId: new Date().getTime().toString(),
     amount: '1.0',
     productInfo: 'productInfo',
@@ -52,7 +52,7 @@ export default function App() {
     sendBackHash(
       e.hashName,
       e.hashString +
-        '7o9oo9pRJX7TGYz1kmhgEc5SwAZIzc87',
+        'MERCHANT-SALT',
     );
   };
 
